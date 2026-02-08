@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, doc, setDoc, updateDoc } from "firebase/firestore";
+import { getFirestore } from "firebase/firestore";
 import type { Data } from "@measured/puck";
 
 // TODO: Replace with your web app's Firebase configuration
