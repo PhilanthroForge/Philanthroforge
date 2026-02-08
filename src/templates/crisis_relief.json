@@ -1,0 +1,31 @@
+{
+    "content": [
+        {
+            "type": "Hero",
+            "props": {
+                "id": "Hero-Crisis",
+                "title": "URGENT RESPONSE",
+                "subtitle": "Providing immediate relief in disaster zones.",
+                "backgroundImage": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1200&h=600&fit=crop"
+            }
+        },
+        {
+            "type": "DonationBlock",
+            "props": {
+                "id": "Donation-Crisis",
+                "provider": "paypal",
+                "merchantId": "crisis@example.com",
+                "amounts": "50, 100, 200, 500",
+                "buttonText": "DONATE NOW"
+            }
+        },
+        {
+            "type": "RichText",
+            "props": {
+                "id": "RichText-Crisis",
+                "content": "<div style='background: #ffe3e3; padding: 15px; border: 1px solid #742a2a; color: #742a2a;'><strong>EMERGENCY ALERT:</strong> We are currently deployed in 3 active zones. Your support saves lives.</div>"
+            }
+        }
+    ],
+    "root": {}
+}

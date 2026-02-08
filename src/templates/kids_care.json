@@ -1,0 +1,40 @@
+{
+    "content": [
+        {
+            "type": "Hero",
+            "props": {
+                "id": "Hero-Kids",
+                "title": "Bright Futures",
+                "subtitle": "Education and play for every child.",
+                "backgroundImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200&h=600&fit=crop"
+            }
+        },
+        {
+            "type": "RichText",
+            "props": {
+                "id": "RichText-Kids",
+                "content": "<div style='color: #d69e2e; text-align: center;'><h1>🎈 Our Programs 🎨</h1><p>From art classes to science camps, we make learning fun!</p></div>"
+            }
+        },
+        {
+            "type": "DonationBlock",
+            "props": {
+                "id": "Donation-Kids",
+                "provider": "razorpay",
+                "merchantId": "rzp_test_kids",
+                "amounts": "15, 30, 45",
+                "buttonText": "Sponsor a Child"
+            }
+        },
+        {
+            "type": "ActionBtn",
+            "props": {
+                "id": "Action-Kids",
+                "label": "View Gallery",
+                "url": "#gallery",
+                "variant": "secondary"
+            }
+        }
+    ],
+    "root": {}
+}

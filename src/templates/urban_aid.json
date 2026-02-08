@@ -1,0 +1,40 @@
+{
+    "content": [
+        {
+            "type": "Hero",
+            "props": {
+                "id": "Hero-Urban",
+                "title": "Empowering Communities",
+                "subtitle": "Building stronger neighborhoods through direct action.",
+                "backgroundImage": "https://images.unsplash.com/photo-1444653614773-995cb7546652?w=1200&h=600&fit=crop"
+            }
+        },
+        {
+            "type": "ActionBtn",
+            "props": {
+                "id": "Action-Urban",
+                "label": "Volunteer With Us",
+                "url": "#volunteer",
+                "variant": "primary"
+            }
+        },
+        {
+            "type": "DonationBlock",
+            "props": {
+                "id": "Donation-Urban",
+                "provider": "razorpay",
+                "merchantId": "rzp_test_urban",
+                "amounts": "50, 100, 250, 500",
+                "buttonText": "Fund a Project"
+            }
+        },
+        {
+            "type": "RichText",
+            "props": {
+                "id": "RichText-Urban",
+                "content": "<div style='background: #f7fafc; padding: 20px; border-left: 5px solid #ed8936;'><h3>Urban Renewal Initiative</h3><p>We focus on sustainable infrastructure and youth programs.</p></div>"
+            }
+        }
+    ],
+    "root": {}
+}

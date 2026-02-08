@@ -1,0 +1,33 @@
+{
+    "content": [
+        {
+            "type": "Hero",
+            "props": {
+                "id": "Hero-Water",
+                "title": "Clean Water for All",
+                "subtitle": "Access to safe drinking water is a human right.",
+                "backgroundImage": "https://images.unsplash.com/photo-1541252260730-0412e8e2108e?w=1200&h=600&fit=crop"
+            }
+        },
+        {
+            "type": "ImageGrid",
+            "props": {
+                "id": "ImageGrid-Water",
+                "image1": "https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=600&h=400&fit=crop",
+                "image2": "https://images.unsplash.com/photo-1548695607-9c73430ba065?w=600&h=400&fit=crop",
+                "image3": "https://images.unsplash.com/photo-1563974318767-a4de7800eeb1?w=600&h=400&fit=crop"
+            }
+        },
+        {
+            "type": "DonationBlock",
+            "props": {
+                "id": "Donation-Water",
+                "provider": "paypal",
+                "merchantId": "water@example.com",
+                "amounts": "20, 40, 60",
+                "buttonText": "Give Water"
+            }
+        }
+    ],
+    "root": {}
+}

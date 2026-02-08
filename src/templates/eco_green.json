@@ -1,0 +1,40 @@
+{
+    "content": [
+        {
+            "type": "Hero",
+            "props": {
+                "id": "Hero-Eco",
+                "title": "Restoring Our Planet",
+                "subtitle": "Join the movement to plant 1 million trees this year.",
+                "backgroundImage": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&h=600&fit=crop"
+            }
+        },
+        {
+            "type": "RichText",
+            "props": {
+                "id": "RichText-Eco",
+                "content": "<div style='text-align: center; color: #2f855a;'><h2>Our Mission</h2><p>We believe in a world where nature thrives. Your donation helps us protect vital ecosystems.</p></div>"
+            }
+        },
+        {
+            "type": "DonationBlock",
+            "props": {
+                "id": "Donation-Eco",
+                "provider": "paypal",
+                "merchantId": "eco@example.com",
+                "amounts": "10, 25, 50, 100",
+                "buttonText": "Plant a Tree"
+            }
+        },
+        {
+            "type": "ImageGrid",
+            "props": {
+                "id": "ImageGrid-Eco",
+                "image1": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&h=400&fit=crop",
+                "image2": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop",
+                "image3": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&h=400&fit=crop"
+            }
+        }
+    ],
+    "root": {}
+}
