@@ -16,7 +16,7 @@ const initialData = {
         id: "Hero-1",
         title: "Welcome to PhilanthroForge",
         subtitle: "Build beautiful websites for non-profits with drag-and-drop simplicity",
-        backgroundImage: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=1200&h=600&fit=crop",
+        backgroundImage: "https://images.unsplash.com/photo-1469571406257-022069fca5ed?w=1200&h=600&fit=crop",
       },
     },
   ],

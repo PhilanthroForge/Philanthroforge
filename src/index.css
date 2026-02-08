@@ -9,9 +9,107 @@
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow: hidden;
+  /* Prevent body scroll, let editor handle it */
 }
 
 /* Ensure the editor takes full height */
 #root {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 
+   FLOATING SIDEBAR OVERRIDES
+   Targeting Puck's internal class structure based on observation.
+   These selectors match the typical structure of the Puck editor.
+*/
+
+/* 
+   The main layout usually has a grid/flex structure.
+   We want the left sidebar to be floating.
+   
+   Note: Since we don't have exact class names (cached/hashed), 
+   we might need to target by position in DOM or widely used attributes.
+   
+   However, a common strategy for Puck is to utilize the fact that the sidebar 
+   is often the first child in a container with a specific grid layout.
+*/
+
+/* HACK: Attempt to target the sidebar using attribute selectors if possible, 
+   or generically by its structure (First column of the editor Grid). 
+*/
+div[class*="_Left_"] {
+  position: absolute !important;
+  left: 1.5rem !important;
+  top: 6.5rem !important;
+  /* Below the header with some breathing room */
+  bottom: 2rem !important;
+  z-index: 50 !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 16px !important;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 10px 15px -3px rgba(0, 0, 0, 0.05),
+    0 0 0 1px rgba(0, 0, 0, 0.05) !important;
+  border: none !important;
+  width: 260px !important;
+  height: auto !important;
+  max-height: calc(100vh - 8.5rem) !important;
+  overflow-y: auto !important;
+
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  padding: 8px !important;
+}
+
+/* Hover effect for the sidebar to bring it forward */
+div[class*="_Left_"]:hover {
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(0, 0, 0, 0.05) !important;
+  transform: translateY(-2px);
+}
+
+/* Hide the scrollbar for cleaner look */
+div[class*="_Left_"]::-webkit-scrollbar {
+  width: 6px;
+}
+
+div[class*="_Left_"]::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 3px;
+}
+
+/* 
+   Make the sidebar semi-transparent when not hovering? 
+   Or provide a toggle? 
+   For now, standard floating card.
+*/
+
+/* Center the preview area since sidebar is now absolute (taking it out of flow) */
+div[class*="_Root_"] {
+  margin-left: 0 !important;
+  /* Reset any margin that offset for the sidebar */
+  justify-content: center !important;
+}
+
+/* 
+   We might need to adjust the "Puck" container grid to not reserve space for left column.
+   If Puck uses CSS Grid, we might need to override the grid-template-columns.
+*/
+div[class*="_Puck_"] {
+  grid-template-columns: 0px 1fr 280px !important;
+  /* Collapse left column space */
+}
+
+/* Wait, if we collapse the column, the content inside might disappear if it's strictly grid-placed. */
+/* Better approach: Make the sidebar fixed/absolute and let the grid gap handle the rest, or just force the grid column to be 0 width but visible overflow? */
+
+/* Let's try to target the main layout Grid */
+/* Identifying the main grid container */
+div[class*="_App_"]>div {
+  /* app layout */
 }
