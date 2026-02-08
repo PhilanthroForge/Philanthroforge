@@ -1,0 +1,58 @@
+{
+  "hash": "9604d4b9",
+  "configHash": "2a33255b",
+  "lockfileHash": "f8627273",
+  "browserHash": "a8e4ef99",
+  "optimized": {
+    "@measured/puck": {
+      "src": "../../node_modules/@measured/puck/dist/index.mjs",
+      "file": "@measured_puck.js",
+      "fileHash": "1cc94d83",
+      "needsInterop": false
+    },
+    "firebase/app": {
+      "src": "../../node_modules/firebase/app/dist/esm/index.esm.js",
+      "file": "firebase_app.js",
+      "fileHash": "925759aa",
+      "needsInterop": false
+    },
+    "firebase/firestore": {
+      "src": "../../node_modules/firebase/firestore/dist/esm/index.esm.js",
+      "file": "firebase_firestore.js",
+      "fileHash": "d982e232",
+      "needsInterop": false
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "0c6366dd",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "4ac2b095",
+      "needsInterop": true
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "71e897d6",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-64ES3AYW": {
+      "file": "chunk-64ES3AYW.js"
+    },
+    "chunk-7J7PNBLN": {
+      "file": "chunk-7J7PNBLN.js"
+    },
+    "chunk-W3PUVTET": {
+      "file": "chunk-W3PUVTET.js"
+    },
+    "chunk-7D4SUZUM": {
+      "file": "chunk-7D4SUZUM.js"
+    }
+  }
+}
